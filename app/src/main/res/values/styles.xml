@@ -18,4 +18,12 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="Classic_text" parent="TextAppearance.AppCompat" >
+
+        <item name="android:fontFamily">"@font/objectivity/Objectivity-Bold"</item>
+
+    </style>
+
+    <style name="Classic_Adrian" parent="Theme.AppCompat" />
+
 </resources>

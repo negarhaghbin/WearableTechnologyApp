@@ -28,7 +28,8 @@
             android:label="@string/title_activity_performance"
             android:theme="@style/AppTheme" />
         <activity android:name=".Register" />
-        <activity android:name=".NewPassword"></activity>
+        <activity android:name=".NewPassword" />
+        <activity android:name=".SettingsActivity"></activity>
     </application>
 
 </manifest>

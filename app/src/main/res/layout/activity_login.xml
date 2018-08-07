@@ -40,8 +40,8 @@
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
                 android:padding="8dp"
-                android:textColor="#fff"
-                android:textColorHint="#fff" />
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
 
             <View
                 android:layout_width="wrap_content"
@@ -60,8 +60,8 @@
                 android:inputType="textPassword"
                 android:maxLines="1"
                 android:padding="8dp"
-                android:textColorHint="#fff"
-                android:textColor="#fff"/>
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"/>
 
             <View
                 android:layout_width="match_parent"
