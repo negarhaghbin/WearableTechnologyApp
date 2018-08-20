@@ -17,13 +17,17 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.TextView;
 import android.content.Intent;
 
-public class Login extends AppCompatActivity {
+public class Login extends AppCompatActivity{
+
     private Button login;
     private Button register;
     private Button newPassword;
+    private CheckBox theme_checkbox;
 
 
     /**
@@ -45,6 +49,17 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        //initialise toggle for neutral theme
+        theme_checkbox = (CheckBox) findViewById(R.id.theme_checkbox);
+        theme_checkbox.setChecked(true); //true by default, should open app in neutral mode first
+        theme_checkbox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
+                changeTheme(isChecked);
+            }
+        });
+
 
         login = (Button) findViewById(R.id.login);
         login.setOnClickListener(new View.OnClickListener() {
@@ -71,31 +86,31 @@ public class Login extends AppCompatActivity {
             }
         });*/
 
-       // Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-      //  setSupportActionBar(toolbar);
+        // Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        //  setSupportActionBar(toolbar);
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
-      //  mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
+        //  mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
 
         // Set up the ViewPager with the sections adapter.
-      //  mViewPager = (ViewPager) findViewById(R.id.container);
-      //  mViewPager.setAdapter(mSectionsPagerAdapter);
+        //  mViewPager = (ViewPager) findViewById(R.id.container);
+        //  mViewPager.setAdapter(mSectionsPagerAdapter);
 
-       // FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-      //  fab.setOnClickListener(new View.OnClickListener() {
-       //     @Override
+        // FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        //  fab.setOnClickListener(new View.OnClickListener() {
+        //     @Override
         //    public void onClick(View view) {
         //        Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-       //                 .setAction("Action", null).show();
+        //                 .setAction("Action", null).show();
         //    }
-       // });
-
+        // });
     }
 
     public void openMainPage(){
         Intent intent = new Intent(this, MainPageActivity.class);
         startActivity(intent);
     }
+
 
     public void openRegisterPage(){
         Intent intent = new Intent(this, Register.class);
@@ -107,6 +122,19 @@ public class Login extends AppCompatActivity {
         Intent intent = new Intent(this, NewPassword.class);
         startActivity(intent);
     }*/
+
+    /* arrange the neutral theme to override default theme...unsure how to do that yet*/
+    public void changeTheme(boolean isChecked) {
+        /*
+        if theme_checkbox.isChecked(){
+
+            this.setThemeNeutral(true);
+        }
+
+        else
+            this.setThemeNeutral(false);
+
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -133,6 +161,7 @@ public class Login extends AppCompatActivity {
     /**
      * A placeholder fragment containing a simple view.
      */
+    }
     public static class PlaceholderFragment extends Fragment {
         /**
          * The fragment argument representing the section number for this

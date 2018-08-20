@@ -18,4 +18,24 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <!-- neutral application theme-->
+    <style name="neutral_theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/neutralPrimary</item>
+        <item name="android:colorPrimaryDark">@color/neutralPrimaryDark</item>
+        <item name="android:colorAccent">@color/neutralAccent</item>
+        <item name="android:titleTextAppearance">@style/neutral_theme_title</item>
+
+    </style>
+
+    <style name="neutral_theme_title" parent="TextAppearance.AppCompat">
+
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/neutralPrimaryDark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">@style/Theme.AppCompat.Light</item>
+        <item name="android:textAllCaps">true</item>
+
+
+    </style>
+
 </resources>
