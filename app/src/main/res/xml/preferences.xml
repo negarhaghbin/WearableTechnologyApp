@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/enable_disable_sensors">
+        <SwitchPreference
+            android:id="@+id/location_enabled_preference"
+            android:title="@string/location_services"
+            android:summary="@string/location_services_explanation"/>
+        <SwitchPreference
+            android:id="@+id/gyroscope_enabled_preference"
+            android:title="@string/gyroscope"
+            android:summary="@string/gyroscope_explanation"/>
+        <SwitchPreference
+            android:id="@+id/magnetometer_enabled_preference"
+            android:title="@string/magnetometer_compass"
+            android:summary="@string/magnetometer_explanation"/>
+        <SwitchPreference
+            android:id="@+id/accelerometer_enabled_preference"
+            android:title="@string/accelerometer"
+            android:summary="@string/accelerometer_explanation"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

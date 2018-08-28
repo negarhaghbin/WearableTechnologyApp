@@ -9,4 +9,14 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="title_activity_performance">Performance</string>
+    <!-- preferences strings-->
+    <string name="enable_disable_sensors">Enable/Disable Sensors</string>
+    <string name="location_services">Location Services</string>
+    <string name="location_services_explanation">Explain location here</string>
+    <string name="gyroscope">Gyroscope</string>
+    <string name="gyroscope_explanation">Explain gyroscope here</string>
+    <string name="magnetometer_compass">Magnetometer (Compass)</string>
+    <string name="magnetometer_explanation">Explain magnetometer here</string>
+    <string name="accelerometer">Accelerometer</string>
+    <string name="accelerometer_explanation">Explain accelerometer here</string>
 </resources>
