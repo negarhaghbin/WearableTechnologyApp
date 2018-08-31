@@ -19,4 +19,7 @@
     <string name="magnetometer_explanation">Explain magnetometer here</string>
     <string name="accelerometer">Accelerometer</string>
     <string name="accelerometer_explanation">Explain accelerometer here</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

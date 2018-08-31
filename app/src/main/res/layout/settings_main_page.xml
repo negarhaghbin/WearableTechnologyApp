@@ -11,31 +11,33 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:layout_gravity="center_horizontal">
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="10dp">
 
-        <LinearLayout
-            android:layout_width="0dp"
+        <TextView
+            android:id="@+id/settings_main_page_header"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:gravity="center_horizontal"
+            android:shadowColor="@color/blue_steel_darker"
+            android:shadowDx="1.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="1.5"
+            android:text="@string/action_settings"
+            android:textAllCaps="true"
+            android:textColor="@color/blue_steel"
+            android:textSize="40sp" />
 
-            <TextView
-                android:id="@+id/settings_main_page_header"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:shadowColor="@color/blue_steel_darker"
-                android:shadowRadius="1.5"
-                android:shadowDx="1.0"
-                android:shadowDy="1.0"
-                android:text="@string/action_settings"
-                android:textAllCaps="true"
-                android:textColor="@color/blue_steel"
-                android:textSize="40sp"
-                android:gravity="center_horizontal"/>
+        <FrameLayout
+            android:id="@+id/sensor_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
 
-        </LinearLayout>
+        </FrameLayout>
 
     </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>
