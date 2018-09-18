@@ -20,18 +20,18 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="240dp"
-                android:layout_height="120dp"
+                android:layout_width="364dp"
+                android:layout_height="166dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="20dp"
                 android:layout_marginTop="30dp"
                 android:padding="16dp"
-                android:src="@drawable/ic_fitness_center_white_24dp" />
+                android:src="@drawable/Logo2" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:background="@android:color/transparent"
                 android:drawableLeft="@drawable/ic_person_white_24dp"
                 android:drawablePadding="12dp"
@@ -60,8 +60,8 @@
                 android:inputType="textPassword"
                 android:maxLines="1"
                 android:padding="8dp"
-                android:textColorHint="#fff"
-                android:textColor="#fff"/>
+                android:textColor="#fff"
+                android:textColorHint="#fff" />
 
             <View
                 android:layout_width="match_parent"
@@ -72,15 +72,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                android:buttonTint="#fff"
                 android:checked="false"
                 android:padding="8dp"
                 android:text="Remember me"
-                android:textColor="#fff"
-                android:buttonTint="#fff"
-                />
+                android:textColor="#fff" />
 
             <Button
                 android:id="@+id/login"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -90,11 +90,11 @@
                 android:text="Log in"
                 android:textAllCaps="false"
                 android:textColor="#64a59e"
-                style="@style/Base.TextAppearance.AppCompat.Body1"
                 android:textSize="18sp" />
 
             <Button
                 android:id="@+id/register"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -102,12 +102,12 @@
                 android:clickable="true"
                 android:padding="10dp"
                 android:text="Register"
-                style="@style/Base.TextAppearance.AppCompat.Body1"
                 android:textAllCaps="false"
                 android:textColor="#fff"
                 android:textSize="18sp" />
 
             <TextView
+                android:id="@+id/newPassword"
                 style="@style/TextAppearance.AppCompat.Body2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -115,8 +115,7 @@
                 android:clickable="true"
                 android:padding="10dp"
                 android:text="Forget Your Password?"
-                android:textColor="#fff"
-                android:id="@+id/newPassword"/>
+                android:textColor="#fff" />
 
         </LinearLayout>
     </ScrollView>
